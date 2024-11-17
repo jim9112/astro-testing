@@ -1,0 +1,9 @@
+---
+import Social from "./Social.astro";
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-white absolute bottom-0 w-full py-4 text-center">
+  <Social platform="github" username="jim9112" />
+  <p class="text-gray-500">©{currentYear} My Portfolio</p>
+</footer>

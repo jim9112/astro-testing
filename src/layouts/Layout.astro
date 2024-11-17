@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
 }
@@ -17,20 +19,11 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<header>
-		<ul class="flex gap-2 items-center justify-center">
-			<li>
-				<a class="text-white" href="/">Home</a>
-			</li>
-			<li>
-				<a class="text-white" href="/about">About</a>
-			</li>
-			<li>
-				<a class="text-white" href="/blog">Blog</a>
-			</li>
-		</ul>
+		<Navigation />
 	</header>
 	<body>
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
