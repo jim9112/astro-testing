@@ -1,4 +1,8 @@
 ---
+interface Props {
+  platform: string;
+  username: string;
+}
 const { platform, username } = Astro.props;
 ---
   <p>Learn more about my projects on <a class="text-red-500" href={`https://www.${platform}.com/${username}`} target="_blank">{platform}</a>!</p>
